@@ -359,7 +359,7 @@ Client.on("messageCreate", async message => {
                     .setPlaceholder("Nous attendons votre choix !")
                     .addOptions([{ label: "Pronom il", description: "Vous êtes un 'il'", emoji: "🔞", value: "• 🍃- pronom il" }]))
 
-                let channel = Client.channels.cache.get("854040628781514753")
+                let channel = Client.channels.cache.get("854026908487385107")
                 let msg = await channel.send({ embeds: [Embed], components: [menu] })
                 const filter = async () => true;
                 const collector = msg.createMessageComponentCollector({ filter })
