@@ -381,7 +381,7 @@ Client.on("messageCreate", async message => {
                     let il = channel.guild.roles.cache.get("854026908298903627")
                     let elle = channel.guild.roles.cache.get("854026908298903626")
                     let iel = channel.guild.roles.cache.get("854026908298903625")
-                    let autre = channel.get.roles.cache.get("854026908298903624")
+                    let autre = channel.guild.roles.cache.get("854026908298903624")
 
                     let mineur = channel.guild.roles.cache.get("854026908287369245")
                     let age2 = channel.guild.roles.cache.get("854026908287369244")
