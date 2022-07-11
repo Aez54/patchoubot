@@ -388,7 +388,7 @@ Client.on("messageCreate", async message => {
                     let age3 = channel.guild.roles.cache.get("854026908287369243")
 
                     let bienvenue = channel.guild.roles.cache.get("854026908287369241")
-                    let bump = channel.guild.role.cache.get("854026908287369239")
+                    let bump = channel.guild.roles.cache.get("854026908287369239")
                     let update = channel.guild.roles.cache.get("993605630948552854")
                     let dessin = channel.guild.roles.cache.get("993606538545594368")
 
