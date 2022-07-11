@@ -3,5 +3,19 @@
     "discord-welcome": "^3.0.3",
     "discord.js": "^13.3.1",
     "dotenv": "^16.0.1"
-  }
+  },
+  "name": "newbot",
+  "version": "1.0.0",
+  "description": "PatchouBotV1",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Aez54/patchoubot.git)"
+  },
+  "author": "Quentin.S",
+  "license": "ISC"
 }
