@@ -341,7 +341,8 @@ Client.on("messageCreate", async message => {
             message.channel.send({ embeds: [embed] });
 
         }
-            function updaterole(){
+                if (message.member.permissions.has("ADMINISTRATOR")) {
+                    if (message.content === prefix + "pp") {
                 console.log("je suis ready")
                 let Embed = new Discord.MessageEmbed()
                     .setColor("#B0F2B6")
@@ -425,6 +426,8 @@ Client.on("messageCreate", async message => {
 
                     menu.reply({ content: "Vos rôles on été modifiés !", ephemeral: true })
                 })
+            }
+        }
     }
 
         if (message.member.permissions.has('MUTE_MEMBERS')) {
@@ -456,17 +459,6 @@ Client.on("messageCreate", async message => {
                 }
             }
         }
-
-        if (message.member.permissions.has("ADMINISTRATOR")) {
-            if (message.content === prefix + "pp") {
-                updaterole
-            }
-        }
-        setInterval(() => {
-            updaterole
-        }, 2000); //86400000
-    }
-
 });
 
 
