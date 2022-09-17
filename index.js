@@ -341,8 +341,7 @@ Client.on("messageCreate", async message => {
             message.channel.send({ embeds: [embed] });
 
         }
-        if (message.member.permissions.has("ADMINISTRATOR")) {
-            if (message.content === prefix + "pp") {
+            function updaterole(){
                 console.log("je suis ready")
                 let Embed = new Discord.MessageEmbed()
                     .setColor("#B0F2B6")
@@ -426,9 +425,8 @@ Client.on("messageCreate", async message => {
 
                     menu.reply({ content: "Vos rôles on été modifiés !", ephemeral: true })
                 })
-            }
+    }
 
-        }
         if (message.member.permissions.has('MUTE_MEMBERS')) {
             if (message.content.startsWith(prefix + "goulag")) {
 
@@ -460,10 +458,13 @@ Client.on("messageCreate", async message => {
         }
 
         if (message.member.permissions.has("ADMINISTRATOR")) {
-            if (message.content === prefix + "egirl") {
-                message.channel.send("Je lance la propagande : PROTEGONS NOS EGIRL. Elles peuvent avoir la vie dure, parfois même se faire insulter. C'est pour cela que je lance cette action pour la lutte et la protection de nos très chères Egirl, qui peuplent le monde des jeux vidéo ainsi que les réseaux sociaux. ''She protecc, she attacc, but most importantly she says UwU'' ")
+            if (message.content === prefix + "pp") {
+                updaterole
             }
         }
+        setInterval(() => {
+            updaterole
+        }, 2000); //86400000
     }
 
 });
