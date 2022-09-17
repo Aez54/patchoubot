@@ -311,6 +311,7 @@ Client.on("messageCreate", async message => {
     }
     if (message.member.permissions.has("ADMINISTRATOR")) {
         if (message.content.startsWith(prefix + "bonnenuit")) {
+            message.delete();
             message.channel.send("Bonne nuit peuple de Patchouli, faites de beaux rêves !")
         }
     };
@@ -341,8 +342,7 @@ Client.on("messageCreate", async message => {
             message.channel.send({ embeds: [embed] });
 
         }
-                if (message.member.permissions.has("ADMINISTRATOR")) {
-                    if (message.content === prefix + "pp") {
+
                 console.log("je suis ready")
                 let Embed = new Discord.MessageEmbed()
                     .setColor("#B0F2B6")
@@ -427,8 +427,8 @@ Client.on("messageCreate", async message => {
                     menu.reply({ content: "Vos rôles on été modifiés !", ephemeral: true })
                 })
             }
-        }
-    }
+        
+    
 
         if (message.member.permissions.has('MUTE_MEMBERS')) {
             if (message.content.startsWith(prefix + "goulag")) {
@@ -440,7 +440,7 @@ Client.on("messageCreate", async message => {
                 }
                 else {
                     mention.roles.add("993999906673016952")
-                    message.reply(mention.displayName + " est envoyé(e) au goulag, bonne chance à lui/elle 🪖 !");
+                    message.reply(mention.displayName + " est envoyé(e) au goulag, bonne chance à toi 🪖 !");
 
                 }
 
@@ -459,6 +459,12 @@ Client.on("messageCreate", async message => {
                 }
             }
         }
+
+
+
+        
+
+
 });
 
 
@@ -467,4 +473,4 @@ Client.on("messageCreate", async message => {
 
 
 //Token du bot (à ne pas toucher)
-Client.login(process.env.BOT_TOKEN);
+Client.login("OTE0MTU0ODQ2MzU2MTI3NzU0.GrZQkw.ALDB-Tf5uoZc-ZhM-e75P03ahAUWb1nBh3Llfc");
