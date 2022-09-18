@@ -342,7 +342,8 @@ Client.on("messageCreate", async message => {
             message.channel.send({ embeds: [embed] });
 
         }
-
+        if (message.member.permissions.has("ADMINISTRATOR")) {
+            if (message.content === prefix + "pp") {
                 console.log("je suis ready")
                 let Embed = new Discord.MessageEmbed()
                     .setColor("#B0F2B6")
@@ -427,6 +428,7 @@ Client.on("messageCreate", async message => {
                     menu.reply({ content: "Vos rôles on été modifiés !", ephemeral: true })
                 })
             }
+        }
         
     
 
@@ -464,7 +466,7 @@ Client.on("messageCreate", async message => {
 
         
 
-
+    }
 });
 
 
