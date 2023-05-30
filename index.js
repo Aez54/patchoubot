@@ -475,4 +475,4 @@ Client.on("messageCreate", async message => {
 
 
 //Token du bot (à ne pas toucher)
-Client.login("OTE0MTU0ODQ2MzU2MTI3NzU0.GrZQkw.ALDB-Tf5uoZc-ZhM-e75P03ahAUWb1nBh3Llfc");
+Client.login("");
